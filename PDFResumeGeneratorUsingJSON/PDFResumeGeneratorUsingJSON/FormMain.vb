@@ -7,6 +7,7 @@ Imports System.Linq
 Imports System.Windows.Forms
 
 Public Class FormMain
+    Private Const PATH_FOLDER_PDFS As String = "C:\Users\franc\Documents\School\ELECTIVE 3\repos\PDFResumeGeneratorUsingJSON-folder\PDFResumeGeneratorUsingJSON\created-pdfs\"
     Private _path As String
 
     Private namePDF_JSON As String
@@ -45,7 +46,8 @@ Public Class FormMain
                     Dim nameParts() As String = SplitName(person.FullName)
                     nameParts(0) = nameParts(0).Replace(" ", "-")
                     nameParts(1) = nameParts(1).ToUpper()
-                    Name = nameParts(1) + "_" + nameParts(0)
+                    namePDF_JSON = nameParts(1) + "_" + nameParts(0)
+
 
                     txtBxFullName.Text = person.FullName
                     txtBxContactNo.Text = person.ContactNo
@@ -88,16 +90,88 @@ Public Class FormMain
 
                     isReadingJson = True
                 Catch ex As Exception
-
+                    MessageBox.Show(ex.Message)
                 End Try
             End If
-
         Catch ex As Exception
-
+            MessageBox.Show(ex.Message)
         End Try
     End Sub
 
-    Private Function SplitName(ByVal fullName As String)
+    Private Sub btnGeneratePDF_Click(sender As Object, e As EventArgs) Handles btnGeneratePDF.Click
+        If isReadingJson Then
+            Dim destination As FileStream = New FileStream(PATH_FOLDER_PDFS & namePDF_JSON & ".pdf", FileMode.Create)
 
+            Dim arial As BaseFont = BaseFont.CreateFont(BaseFont.HELVETICA, BaseFont.CP1252, BaseFont.NOT_EMBEDDED)
+            Dim biggest As iTextSharp.text.Font = New iTextSharp.text.Font(arial, 28, iTextSharp.text.Font.BOLD)
+            Dim big As iTextSharp.text.Font = New iTextSharp.text.Font(arial, 20, iTextSharp.text.Font.BOLD)
+            Dim normal As iTextSharp.text.Font = New iTextSharp.text.Font(arial, 14, iTextSharp.text.Font.NORMAL)
+            Dim small As iTextSharp.text.Font = New iTextSharp.text.Font(arial, 12, iTextSharp.text.Font.NORMAL)
+
+            Dim doc As Document = New Document(PageSize.A4, 60, 75, 60, 75)
+            Dim writer As PdfWriter = PdfWriter.GetInstance(doc, destination)
+            doc.AddAuthor("Francis Bernas")
+            doc.AddCreator("Francis Bernas")
+            doc.AddKeywords("PDF Resume")
+            doc.AddTitle("Resume - PDF creation using iTextSharp")
+
+            doc.Open()
+
+            Dim paragraph As Paragraph = New Paragraph
+            paragraph.Add(New Phrase(fullName + vbCrLf + vbCrLf, biggest))
+            paragraph.Add(New Phrase(address + vbCrLf, normal))
+            paragraph.Add(New Phrase(contactNo + vbCrLf, normal))
+            paragraph.Add(New Phrase(email + vbCrLf + vbCrLf + vbCrLf + vbCrLf, normal))
+
+            paragraph.Add(New Phrase("Objective" + vbCrLf + vbCrLf, big))
+            paragraph.Add(New Phrase(objective + vbCrLf + vbCrLf + vbCrLf, normal))
+
+            paragraph.Add(New Phrase("Education" + vbCrLf + vbCrLf, big))
+            paragraph.Add(New Phrase(college + vbCrLf, normal))
+            paragraph.Add(New Phrase("• " + collegeDetail1 + vbCrLf, small))
+            paragraph.Add(New Phrase("• " + collegeDetail2 + vbCrLf + vbCrLf + vbCrLf + vbCrLf, small))
+
+            paragraph.Add(New Phrase("Skills" + vbCrLf + vbCrLf, big))
+            paragraph.Add(New Phrase("• " + skill1 + vbCrLf, normal))
+            paragraph.Add(New Phrase("• " + skill2 + vbCrLf, normal))
+            paragraph.Add(New Phrase("• " + skill3 + vbCrLf + vbCrLf, normal))
+
+            paragraph.Add(New Phrase(notes + vbCrLf + vbCrLf + vbCrLf, normal))
+
+            doc.Add(paragraph)
+            doc.Close()
+            writer.Close()
+            destination.Close()
+            MessageBox.Show("PDF successfully created", "Success!", MessageBoxButtons.OK, MessageBoxIcon.Information)
+
+            For Each txtBx As TextBox In panelFields.Controls.OfType(Of TextBox)
+                txtBx.Text = ""
+                txtBx.ReadOnly = True
+            Next
+
+            panelPlaceholder.Visible = True
+            panelFields.Visible = False
+
+            isReadingJson = False
+        Else
+            MessageBox.Show("Load a JSON file first", "Attention!", MessageBoxButtons.OK, MessageBoxIcon.Warning)
+        End If
+    End Sub
+
+    Public Function SplitName(ByVal fullName As String) As String()
+        Dim nameSurname(2) As String
+        Dim nameSurnameTemp() As String = fullName.Split(" ")
+        For i = 0 To nameSurnameTemp.Length - 1
+            If i < nameSurnameTemp.Length - 1 Then
+                If Not (String.IsNullOrEmpty(nameSurname(0))) Then
+                    nameSurname(0) += " " & nameSurnameTemp(i)
+                Else
+                    nameSurname(0) += nameSurnameTemp(i)
+                End If
+            Else
+                nameSurname(1) = nameSurnameTemp(i)
+            End If
+        Next
+        Return nameSurname
     End Function
 End Class
