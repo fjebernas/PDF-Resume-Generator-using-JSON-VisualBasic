@@ -14,10 +14,25 @@
     Public Skill2 As String
     Public Skill3 As String
 
-    Public Closing As String
+    Public notes As String
 
     Public Sub New()
 
+    End Sub
+
+    Public Sub New(ByVal txtBxFullName As String, ByVal txtBxAddress As String, ByVal txtBxContactNo As String, ByVal txtBxEmail As String, ByVal txtBxObjective As String, ByVal txtBxCollege As String, ByVal txtBxDegree As String, ByVal txtBxAchievements As String, ByVal txtBxSkillOne As String, ByVal txtBxSkillTwo As String, ByVal txtBxSkillThree As String, ByVal txtBxNotes As String)
+        FullName = txtBxFullName
+        Address = txtBxAddress
+        ContactNo = txtBxContactNo
+        Email = txtBxEmail
+        Objective = txtBxObjective
+        College = txtBxCollege
+        CollegeDetail1 = txtBxDegree
+        CollegeDetail2 = txtBxAchievements
+        Skill1 = txtBxSkillOne
+        Skill2 = txtBxSkillTwo
+        Skill3 = txtBxSkillThree
+        notes = txtBxNotes
     End Sub
 
 End Class

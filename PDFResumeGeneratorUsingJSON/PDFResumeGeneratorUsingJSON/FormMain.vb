@@ -8,6 +8,7 @@ Imports System.Windows.Forms
 
 Public Class FormMain
     Private Const PATH_FOLDER_PDFS As String = "C:\Users\franc\Documents\School\ELECTIVE 3\repos\PDFResumeGeneratorUsingJSON-folder\PDFResumeGeneratorUsingJSON\created-pdfs\"
+    Private Const PATH_FOLDER_JSONS As String = "C:\Users\franc\Documents\School\ELECTIVE 3\repos\PDFResumeGeneratorUsingJSON-folder\PDFResumeGeneratorUsingJSON\json-files\"
     Private _path As String
 
     Private namePDF_JSON As String
@@ -64,7 +65,7 @@ Public Class FormMain
                     txtBxSkillTwo.Text = "• " + person.Skill2
                     txtBxSkillThree.Text = "• " + person.Skill3
 
-                    txtBxNotes.Text = person.Closing
+                    txtBxNotes.Text = person.notes
 
                     fullName = person.FullName
                     contactNo = person.ContactNo
@@ -81,7 +82,7 @@ Public Class FormMain
                     skill2 = person.Skill2
                     skill3 = person.Skill3
 
-                    notes = person.Closing
+                    notes = person.notes
 
                     panelPlaceholder.Visible = False
                     panelFields.Visible = True
@@ -96,6 +97,63 @@ Public Class FormMain
         Catch ex As Exception
             MessageBox.Show(ex.Message)
         End Try
+    End Sub
+
+    Private Sub btnWriteJSON_Click(sender As Object, e As EventArgs) Handles btnWriteJSON.Click
+        MessageBox.Show("Please fill out the fields", "Attention", MessageBoxButtons.OK, MessageBoxIcon.Information)
+
+        btnCancel.Visible = True
+
+        panelPlaceholder.Visible = False
+        panelFields.Visible = True
+
+        For Each txtBx As TextBox In panelFields.Controls.OfType(Of TextBox)
+            txtBx.Text = ""
+            txtBx.ReadOnly = False
+        Next
+
+        btnSaveToJSON.Visible = True
+    End Sub
+
+    Private Sub btnSaveToJSON_Click(sender As Object, e As EventArgs) Handles btnSaveToJSON.Click
+        Dim newPerson As Person = New Person(
+            txtBxFullName.Text,
+            txtBxAddress.Text,
+            txtBxContactNo.Text,
+            txtbxEmail.Text,
+            txtBxObjective.Text,
+            txtBxCollege.Text,
+            txtBxDegree.Text,
+            txtBxAchievements.Text,
+            txtBxSkillOne.Text,
+            txtBxSkillTwo.Text,
+            txtBxSkillThree.Text,
+            txtBxNotes.Text
+        )
+
+        namePDF_JSON = "JSON-" & newPerson.FullName
+
+        Dim jsonToWrite = JsonConvert.SerializeObject(newPerson, Formatting.Indented)
+
+        Dim createJSON As StreamWriter
+        createJSON = File.CreateText(PATH_FOLDER_JSONS & namePDF_JSON & ".json")
+
+        createJSON.Write(jsonToWrite)
+        createJSON.Close()
+
+        MessageBox.Show("New JSON file successfully created", "Success!", MessageBoxButtons.OK, MessageBoxIcon.Information)
+
+        For Each txtBx As TextBox In panelFields.Controls.OfType(Of TextBox)
+            txtBx.Text = ""
+            txtBx.ReadOnly = True
+        Next
+
+        btnSaveToJSON.Visible = False
+
+        panelPlaceholder.Visible = True
+        panelFields.Visible = False
+
+        btnCancel.Visible = False
     End Sub
 
     Private Sub btnGeneratePDF_Click(sender As Object, e As EventArgs) Handles btnGeneratePDF.Click
