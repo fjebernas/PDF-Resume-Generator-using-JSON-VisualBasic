@@ -11,3 +11,9 @@ C:\Users\franc\Documents\School\ELECTIVE 3\repos\PDFResumeGeneratorUsingJSON-fol
 C:\Users\franc\Documents\School\ELECTIVE 3\repos\PDFResumeGeneratorUsingJSON-folder\PDFResumeGeneratorUsingJSON\PDFResumeGeneratorUsingJSON\obj\Debug\PDFResumeGeneratorUsingJSON.exe
 C:\Users\franc\Documents\School\ELECTIVE 3\repos\PDFResumeGeneratorUsingJSON-folder\PDFResumeGeneratorUsingJSON\PDFResumeGeneratorUsingJSON\obj\Debug\PDFResumeGeneratorUsingJSON.xml
 C:\Users\franc\Documents\School\ELECTIVE 3\repos\PDFResumeGeneratorUsingJSON-folder\PDFResumeGeneratorUsingJSON\PDFResumeGeneratorUsingJSON\obj\Debug\PDFResumeGeneratorUsingJSON.pdb
+C:\Users\franc\Documents\School\ELECTIVE 3\repos\PDFResumeGeneratorUsingJSON-folder\PDFResumeGeneratorUsingJSON\PDFResumeGeneratorUsingJSON\bin\Debug\BouncyCastle.Crypto.dll
+C:\Users\franc\Documents\School\ELECTIVE 3\repos\PDFResumeGeneratorUsingJSON-folder\PDFResumeGeneratorUsingJSON\PDFResumeGeneratorUsingJSON\bin\Debug\itextsharp.dll
+C:\Users\franc\Documents\School\ELECTIVE 3\repos\PDFResumeGeneratorUsingJSON-folder\PDFResumeGeneratorUsingJSON\PDFResumeGeneratorUsingJSON\bin\Debug\Newtonsoft.Json.dll
+C:\Users\franc\Documents\School\ELECTIVE 3\repos\PDFResumeGeneratorUsingJSON-folder\PDFResumeGeneratorUsingJSON\PDFResumeGeneratorUsingJSON\bin\Debug\itextsharp.xml
+C:\Users\franc\Documents\School\ELECTIVE 3\repos\PDFResumeGeneratorUsingJSON-folder\PDFResumeGeneratorUsingJSON\PDFResumeGeneratorUsingJSON\bin\Debug\Newtonsoft.Json.xml
+C:\Users\franc\Documents\School\ELECTIVE 3\repos\PDFResumeGeneratorUsingJSON-folder\PDFResumeGeneratorUsingJSON\PDFResumeGeneratorUsingJSON\obj\Debug\PDFResumeGeneratorUsingJSON.vbproj.CopyComplete
