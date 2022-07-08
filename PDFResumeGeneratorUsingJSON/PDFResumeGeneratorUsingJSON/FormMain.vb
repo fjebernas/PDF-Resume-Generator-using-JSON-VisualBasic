@@ -156,6 +156,19 @@ Public Class FormMain
         btnCancel.Visible = False
     End Sub
 
+    Private Sub btnCancel_Click(sender As Object, e As EventArgs) Handles btnCancel.Click
+        For Each txtBx As TextBox In panelFields.Controls.OfType(Of TextBox)
+            txtBx.Text = ""
+            txtBx.ReadOnly = True
+        Next
+
+        panelPlaceholder.Visible = True
+        panelFields.Visible = False
+
+        btnCancel.Visible = False
+        btnSaveToJSON.Visible = False
+    End Sub
+
     Private Sub btnGeneratePDF_Click(sender As Object, e As EventArgs) Handles btnGeneratePDF.Click
         If isReadingJson Then
             Dim destination As FileStream = New FileStream(PATH_FOLDER_PDFS & namePDF_JSON & ".pdf", FileMode.Create)

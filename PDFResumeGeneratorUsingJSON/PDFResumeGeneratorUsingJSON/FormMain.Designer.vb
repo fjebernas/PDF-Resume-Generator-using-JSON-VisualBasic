@@ -66,37 +66,38 @@ Partial Class FormMain
         '
         'panelPlaceholder
         '
-        Me.panelPlaceholder.BackColor = System.Drawing.Color.FromArgb(CType(CType(43, Byte), Integer), CType(CType(66, Byte), Integer), CType(CType(87, Byte), Integer))
+        Me.panelPlaceholder.BackColor = System.Drawing.Color.FromArgb(CType(CType(205, Byte), Integer), CType(CType(126, Byte), Integer), CType(CType(127, Byte), Integer))
         Me.panelPlaceholder.Controls.Add(Me.label12)
         Me.panelPlaceholder.Controls.Add(Me.pictureBox1)
-        Me.panelPlaceholder.Location = New System.Drawing.Point(367, 226)
+        Me.panelPlaceholder.Location = New System.Drawing.Point(318, 105)
         Me.panelPlaceholder.Name = "panelPlaceholder"
-        Me.panelPlaceholder.Size = New System.Drawing.Size(432, 303)
+        Me.panelPlaceholder.Size = New System.Drawing.Size(529, 565)
         Me.panelPlaceholder.TabIndex = 14
         '
         'label12
         '
         Me.label12.AutoSize = True
-        Me.label12.Font = New System.Drawing.Font("Century Gothic", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.label12.ForeColor = System.Drawing.Color.FromArgb(CType(CType(20, Byte), Integer), CType(CType(32, Byte), Integer), CType(CType(46, Byte), Integer))
-        Me.label12.Location = New System.Drawing.Point(3, 209)
+        Me.label12.Font = New System.Drawing.Font("Century Gothic", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.label12.ForeColor = System.Drawing.Color.FromArgb(CType(CType(82, Byte), Integer), CType(CType(58, Byte), Integer), CType(CType(40, Byte), Integer))
+        Me.label12.Location = New System.Drawing.Point(39, 311)
         Me.label12.Name = "label12"
-        Me.label12.Size = New System.Drawing.Size(422, 22)
+        Me.label12.Size = New System.Drawing.Size(469, 24)
         Me.label12.TabIndex = 10
         Me.label12.Text = "Load or Write a JSON file to start working now"
         '
         'pictureBox1
         '
         Me.pictureBox1.Image = CType(resources.GetObject("pictureBox1.Image"), System.Drawing.Image)
-        Me.pictureBox1.Location = New System.Drawing.Point(148, 52)
+        Me.pictureBox1.Location = New System.Drawing.Point(167, 85)
         Me.pictureBox1.Name = "pictureBox1"
-        Me.pictureBox1.Size = New System.Drawing.Size(143, 141)
+        Me.pictureBox1.Size = New System.Drawing.Size(178, 277)
+        Me.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage
         Me.pictureBox1.TabIndex = 9
         Me.pictureBox1.TabStop = False
         '
         'panelFields
         '
-        Me.panelFields.BackColor = System.Drawing.Color.FromArgb(CType(CType(43, Byte), Integer), CType(CType(66, Byte), Integer), CType(CType(87, Byte), Integer))
+        Me.panelFields.BackColor = System.Drawing.Color.FromArgb(CType(CType(205, Byte), Integer), CType(CType(126, Byte), Integer), CType(CType(127, Byte), Integer))
         Me.panelFields.Controls.Add(Me.label2)
         Me.panelFields.Controls.Add(Me.label4)
         Me.panelFields.Controls.Add(Me.txtbxEmail)
@@ -129,7 +130,7 @@ Partial Class FormMain
         '
         Me.label2.AutoSize = True
         Me.label2.Font = New System.Drawing.Font("Century Gothic", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.label2.ForeColor = System.Drawing.Color.FromArgb(CType(CType(136, Byte), Integer), CType(CType(169, Byte), Integer), CType(CType(195, Byte), Integer))
+        Me.label2.ForeColor = System.Drawing.Color.FromArgb(CType(CType(82, Byte), Integer), CType(CType(58, Byte), Integer), CType(CType(40, Byte), Integer))
         Me.label2.Location = New System.Drawing.Point(57, 21)
         Me.label2.Name = "label2"
         Me.label2.Size = New System.Drawing.Size(88, 21)
@@ -140,7 +141,7 @@ Partial Class FormMain
         '
         Me.label4.AutoSize = True
         Me.label4.Font = New System.Drawing.Font("Century Gothic", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.label4.ForeColor = System.Drawing.Color.FromArgb(CType(CType(136, Byte), Integer), CType(CType(169, Byte), Integer), CType(CType(195, Byte), Integer))
+        Me.label4.ForeColor = System.Drawing.Color.FromArgb(CType(CType(82, Byte), Integer), CType(CType(58, Byte), Integer), CType(CType(40, Byte), Integer))
         Me.label4.Location = New System.Drawing.Point(69, 85)
         Me.label4.Name = "label4"
         Me.label4.Size = New System.Drawing.Size(76, 21)
@@ -149,7 +150,9 @@ Partial Class FormMain
         '
         'txtbxEmail
         '
+        Me.txtbxEmail.BackColor = System.Drawing.Color.FromArgb(CType(CType(222, Byte), Integer), CType(CType(179, Byte), Integer), CType(CType(173, Byte), Integer))
         Me.txtbxEmail.Font = New System.Drawing.Font("Century Gothic", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.txtbxEmail.ForeColor = System.Drawing.Color.FromArgb(CType(CType(82, Byte), Integer), CType(CType(58, Byte), Integer), CType(CType(40, Byte), Integer))
         Me.txtbxEmail.Location = New System.Drawing.Point(480, 83)
         Me.txtbxEmail.Multiline = True
         Me.txtbxEmail.Name = "txtbxEmail"
@@ -162,7 +165,7 @@ Partial Class FormMain
         '
         Me.label6.AutoSize = True
         Me.label6.Font = New System.Drawing.Font("Century Gothic", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.label6.ForeColor = System.Drawing.Color.FromArgb(CType(CType(136, Byte), Integer), CType(CType(169, Byte), Integer), CType(CType(195, Byte), Integer))
+        Me.label6.ForeColor = System.Drawing.Color.FromArgb(CType(CType(82, Byte), Integer), CType(CType(58, Byte), Integer), CType(CType(40, Byte), Integer))
         Me.label6.Location = New System.Drawing.Point(51, 147)
         Me.label6.Name = "label6"
         Me.label6.Size = New System.Drawing.Size(92, 21)
@@ -171,7 +174,9 @@ Partial Class FormMain
         '
         'txtBxContactNo
         '
+        Me.txtBxContactNo.BackColor = System.Drawing.Color.FromArgb(CType(CType(222, Byte), Integer), CType(CType(179, Byte), Integer), CType(CType(173, Byte), Integer))
         Me.txtBxContactNo.Font = New System.Drawing.Font("Century Gothic", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.txtBxContactNo.ForeColor = System.Drawing.Color.FromArgb(CType(CType(82, Byte), Integer), CType(CType(58, Byte), Integer), CType(CType(40, Byte), Integer))
         Me.txtBxContactNo.Location = New System.Drawing.Point(537, 21)
         Me.txtBxContactNo.Multiline = True
         Me.txtBxContactNo.Name = "txtBxContactNo"
@@ -184,7 +189,7 @@ Partial Class FormMain
         '
         Me.label7.AutoSize = True
         Me.label7.Font = New System.Drawing.Font("Century Gothic", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.label7.ForeColor = System.Drawing.Color.FromArgb(CType(CType(136, Byte), Integer), CType(CType(169, Byte), Integer), CType(CType(195, Byte), Integer))
+        Me.label7.ForeColor = System.Drawing.Color.FromArgb(CType(CType(82, Byte), Integer), CType(CType(58, Byte), Integer), CType(CType(40, Byte), Integer))
         Me.label7.Location = New System.Drawing.Point(72, 275)
         Me.label7.Name = "label7"
         Me.label7.Size = New System.Drawing.Size(74, 21)
@@ -193,7 +198,9 @@ Partial Class FormMain
         '
         'txtBxSkillThree
         '
+        Me.txtBxSkillThree.BackColor = System.Drawing.Color.FromArgb(CType(CType(222, Byte), Integer), CType(CType(179, Byte), Integer), CType(CType(173, Byte), Integer))
         Me.txtBxSkillThree.Font = New System.Drawing.Font("Century Gothic", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.txtBxSkillThree.ForeColor = System.Drawing.Color.FromArgb(CType(CType(82, Byte), Integer), CType(CType(58, Byte), Integer), CType(CType(40, Byte), Integer))
         Me.txtBxSkillThree.Location = New System.Drawing.Point(152, 483)
         Me.txtBxSkillThree.Multiline = True
         Me.txtBxSkillThree.Name = "txtBxSkillThree"
@@ -207,7 +214,7 @@ Partial Class FormMain
         '
         Me.label10.AutoSize = True
         Me.label10.Font = New System.Drawing.Font("Century Gothic", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.label10.ForeColor = System.Drawing.Color.FromArgb(CType(CType(136, Byte), Integer), CType(CType(169, Byte), Integer), CType(CType(195, Byte), Integer))
+        Me.label10.ForeColor = System.Drawing.Color.FromArgb(CType(CType(82, Byte), Integer), CType(CType(58, Byte), Integer), CType(CType(40, Byte), Integer))
         Me.label10.Location = New System.Drawing.Point(74, 313)
         Me.label10.Name = "label10"
         Me.label10.Size = New System.Drawing.Size(72, 21)
@@ -216,7 +223,9 @@ Partial Class FormMain
         '
         'txtBxSkillTwo
         '
+        Me.txtBxSkillTwo.BackColor = System.Drawing.Color.FromArgb(CType(CType(222, Byte), Integer), CType(CType(179, Byte), Integer), CType(CType(173, Byte), Integer))
         Me.txtBxSkillTwo.Font = New System.Drawing.Font("Century Gothic", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.txtBxSkillTwo.ForeColor = System.Drawing.Color.FromArgb(CType(CType(82, Byte), Integer), CType(CType(58, Byte), Integer), CType(CType(40, Byte), Integer))
         Me.txtBxSkillTwo.Location = New System.Drawing.Point(152, 445)
         Me.txtBxSkillTwo.Multiline = True
         Me.txtBxSkillTwo.Name = "txtBxSkillTwo"
@@ -230,7 +239,7 @@ Partial Class FormMain
         '
         Me.label11.AutoSize = True
         Me.label11.Font = New System.Drawing.Font("Century Gothic", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.label11.ForeColor = System.Drawing.Color.FromArgb(CType(CType(136, Byte), Integer), CType(CType(169, Byte), Integer), CType(CType(195, Byte), Integer))
+        Me.label11.ForeColor = System.Drawing.Color.FromArgb(CType(CType(82, Byte), Integer), CType(CType(58, Byte), Integer), CType(CType(40, Byte), Integer))
         Me.label11.Location = New System.Drawing.Point(18, 351)
         Me.label11.Name = "label11"
         Me.label11.Size = New System.Drawing.Size(128, 21)
@@ -239,7 +248,9 @@ Partial Class FormMain
         '
         'txtBxSkillOne
         '
+        Me.txtBxSkillOne.BackColor = System.Drawing.Color.FromArgb(CType(CType(222, Byte), Integer), CType(CType(179, Byte), Integer), CType(CType(173, Byte), Integer))
         Me.txtBxSkillOne.Font = New System.Drawing.Font("Century Gothic", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.txtBxSkillOne.ForeColor = System.Drawing.Color.FromArgb(CType(CType(82, Byte), Integer), CType(CType(58, Byte), Integer), CType(CType(40, Byte), Integer))
         Me.txtBxSkillOne.Location = New System.Drawing.Point(152, 407)
         Me.txtBxSkillOne.Multiline = True
         Me.txtBxSkillOne.Name = "txtBxSkillOne"
@@ -253,7 +264,7 @@ Partial Class FormMain
         '
         Me.label9.AutoSize = True
         Me.label9.Font = New System.Drawing.Font("Century Gothic", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.label9.ForeColor = System.Drawing.Color.FromArgb(CType(CType(136, Byte), Integer), CType(CType(169, Byte), Integer), CType(CType(195, Byte), Integer))
+        Me.label9.ForeColor = System.Drawing.Color.FromArgb(CType(CType(82, Byte), Integer), CType(CType(58, Byte), Integer), CType(CType(40, Byte), Integer))
         Me.label9.Location = New System.Drawing.Point(87, 542)
         Me.label9.Name = "label9"
         Me.label9.Size = New System.Drawing.Size(59, 21)
@@ -262,7 +273,9 @@ Partial Class FormMain
         '
         'txtBxAchievements
         '
+        Me.txtBxAchievements.BackColor = System.Drawing.Color.FromArgb(CType(CType(222, Byte), Integer), CType(CType(179, Byte), Integer), CType(CType(173, Byte), Integer))
         Me.txtBxAchievements.Font = New System.Drawing.Font("Century Gothic", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.txtBxAchievements.ForeColor = System.Drawing.Color.FromArgb(CType(CType(82, Byte), Integer), CType(CType(58, Byte), Integer), CType(CType(40, Byte), Integer))
         Me.txtBxAchievements.Location = New System.Drawing.Point(152, 347)
         Me.txtBxAchievements.Multiline = True
         Me.txtBxAchievements.Name = "txtBxAchievements"
@@ -276,7 +289,7 @@ Partial Class FormMain
         '
         Me.label8.AutoSize = True
         Me.label8.Font = New System.Drawing.Font("Century Gothic", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.label8.ForeColor = System.Drawing.Color.FromArgb(CType(CType(136, Byte), Integer), CType(CType(169, Byte), Integer), CType(CType(195, Byte), Integer))
+        Me.label8.ForeColor = System.Drawing.Color.FromArgb(CType(CType(82, Byte), Integer), CType(CType(58, Byte), Integer), CType(CType(40, Byte), Integer))
         Me.label8.Location = New System.Drawing.Point(101, 409)
         Me.label8.Name = "label8"
         Me.label8.Size = New System.Drawing.Size(45, 21)
@@ -285,7 +298,9 @@ Partial Class FormMain
         '
         'txtBxDegree
         '
+        Me.txtBxDegree.BackColor = System.Drawing.Color.FromArgb(CType(CType(222, Byte), Integer), CType(CType(179, Byte), Integer), CType(CType(173, Byte), Integer))
         Me.txtBxDegree.Font = New System.Drawing.Font("Century Gothic", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.txtBxDegree.ForeColor = System.Drawing.Color.FromArgb(CType(CType(82, Byte), Integer), CType(CType(58, Byte), Integer), CType(CType(40, Byte), Integer))
         Me.txtBxDegree.Location = New System.Drawing.Point(152, 309)
         Me.txtBxDegree.Multiline = True
         Me.txtBxDegree.Name = "txtBxDegree"
@@ -299,7 +314,7 @@ Partial Class FormMain
         '
         Me.label3.AutoSize = True
         Me.label3.Font = New System.Drawing.Font("Century Gothic", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.label3.ForeColor = System.Drawing.Color.FromArgb(CType(CType(136, Byte), Integer), CType(CType(169, Byte), Integer), CType(CType(195, Byte), Integer))
+        Me.label3.ForeColor = System.Drawing.Color.FromArgb(CType(CType(82, Byte), Integer), CType(CType(58, Byte), Integer), CType(CType(40, Byte), Integer))
         Me.label3.Location = New System.Drawing.Point(419, 23)
         Me.label3.Name = "label3"
         Me.label3.Size = New System.Drawing.Size(112, 21)
@@ -308,7 +323,9 @@ Partial Class FormMain
         '
         'txtBxCollege
         '
+        Me.txtBxCollege.BackColor = System.Drawing.Color.FromArgb(CType(CType(222, Byte), Integer), CType(CType(179, Byte), Integer), CType(CType(173, Byte), Integer))
         Me.txtBxCollege.Font = New System.Drawing.Font("Century Gothic", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.txtBxCollege.ForeColor = System.Drawing.Color.FromArgb(CType(CType(82, Byte), Integer), CType(CType(58, Byte), Integer), CType(CType(40, Byte), Integer))
         Me.txtBxCollege.Location = New System.Drawing.Point(152, 271)
         Me.txtBxCollege.Multiline = True
         Me.txtBxCollege.Name = "txtBxCollege"
@@ -322,7 +339,7 @@ Partial Class FormMain
         '
         Me.label5.AutoSize = True
         Me.label5.Font = New System.Drawing.Font("Century Gothic", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.label5.ForeColor = System.Drawing.Color.FromArgb(CType(CType(136, Byte), Integer), CType(CType(169, Byte), Integer), CType(CType(195, Byte), Integer))
+        Me.label5.ForeColor = System.Drawing.Color.FromArgb(CType(CType(82, Byte), Integer), CType(CType(58, Byte), Integer), CType(CType(40, Byte), Integer))
         Me.label5.Location = New System.Drawing.Point(419, 85)
         Me.label5.Name = "label5"
         Me.label5.Size = New System.Drawing.Size(55, 21)
@@ -331,7 +348,9 @@ Partial Class FormMain
         '
         'txtBxObjective
         '
+        Me.txtBxObjective.BackColor = System.Drawing.Color.FromArgb(CType(CType(222, Byte), Integer), CType(CType(179, Byte), Integer), CType(CType(173, Byte), Integer))
         Me.txtBxObjective.Font = New System.Drawing.Font("Century Gothic", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.txtBxObjective.ForeColor = System.Drawing.Color.FromArgb(CType(CType(82, Byte), Integer), CType(CType(58, Byte), Integer), CType(CType(40, Byte), Integer))
         Me.txtBxObjective.Location = New System.Drawing.Point(152, 147)
         Me.txtBxObjective.Multiline = True
         Me.txtBxObjective.Name = "txtBxObjective"
@@ -343,7 +362,9 @@ Partial Class FormMain
         '
         'txtBxFullName
         '
+        Me.txtBxFullName.BackColor = System.Drawing.Color.FromArgb(CType(CType(222, Byte), Integer), CType(CType(179, Byte), Integer), CType(CType(173, Byte), Integer))
         Me.txtBxFullName.Font = New System.Drawing.Font("Century Gothic", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.txtBxFullName.ForeColor = System.Drawing.Color.FromArgb(CType(CType(82, Byte), Integer), CType(CType(58, Byte), Integer), CType(CType(40, Byte), Integer))
         Me.txtBxFullName.Location = New System.Drawing.Point(152, 21)
         Me.txtBxFullName.Multiline = True
         Me.txtBxFullName.Name = "txtBxFullName"
@@ -354,7 +375,9 @@ Partial Class FormMain
         '
         'txtBxNotes
         '
+        Me.txtBxNotes.BackColor = System.Drawing.Color.FromArgb(CType(CType(222, Byte), Integer), CType(CType(179, Byte), Integer), CType(CType(173, Byte), Integer))
         Me.txtBxNotes.Font = New System.Drawing.Font("Century Gothic", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.txtBxNotes.ForeColor = System.Drawing.Color.FromArgb(CType(CType(82, Byte), Integer), CType(CType(58, Byte), Integer), CType(CType(40, Byte), Integer))
         Me.txtBxNotes.Location = New System.Drawing.Point(152, 542)
         Me.txtBxNotes.Multiline = True
         Me.txtBxNotes.Name = "txtBxNotes"
@@ -365,7 +388,9 @@ Partial Class FormMain
         '
         'txtBxAddress
         '
+        Me.txtBxAddress.BackColor = System.Drawing.Color.FromArgb(CType(CType(222, Byte), Integer), CType(CType(179, Byte), Integer), CType(CType(173, Byte), Integer))
         Me.txtBxAddress.Font = New System.Drawing.Font("Century Gothic", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.txtBxAddress.ForeColor = System.Drawing.Color.FromArgb(CType(CType(82, Byte), Integer), CType(CType(58, Byte), Integer), CType(CType(40, Byte), Integer))
         Me.txtBxAddress.Location = New System.Drawing.Point(152, 83)
         Me.txtBxAddress.Multiline = True
         Me.txtBxAddress.Name = "txtBxAddress"
@@ -376,7 +401,7 @@ Partial Class FormMain
         '
         'panel1
         '
-        Me.panel1.BackColor = System.Drawing.Color.FromArgb(CType(CType(9, Byte), Integer), CType(CType(18, Byte), Integer), CType(CType(53, Byte), Integer))
+        Me.panel1.BackColor = System.Drawing.Color.FromArgb(CType(CType(185, Byte), Integer), CType(CType(92, Byte), Integer), CType(CType(80, Byte), Integer))
         Me.panel1.Controls.Add(Me.btnLoadJSON)
         Me.panel1.Controls.Add(Me.btnWriteJSON)
         Me.panel1.Controls.Add(Me.btnCancel)
@@ -385,20 +410,22 @@ Partial Class FormMain
         Me.panel1.Dock = System.Windows.Forms.DockStyle.Left
         Me.panel1.Location = New System.Drawing.Point(0, 76)
         Me.panel1.Name = "panel1"
-        Me.panel1.Size = New System.Drawing.Size(211, 643)
+        Me.panel1.Size = New System.Drawing.Size(221, 643)
         Me.panel1.TabIndex = 11
         '
         'btnLoadJSON
         '
-        Me.btnLoadJSON.BackColor = System.Drawing.Color.FromArgb(CType(CType(9, Byte), Integer), CType(CType(18, Byte), Integer), CType(CType(53, Byte), Integer))
+        Me.btnLoadJSON.BackColor = System.Drawing.Color.FromArgb(CType(CType(185, Byte), Integer), CType(CType(92, Byte), Integer), CType(CType(80, Byte), Integer))
         Me.btnLoadJSON.FlatAppearance.BorderSize = 0
+        Me.btnLoadJSON.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(192, Byte), Integer), CType(CType(192, Byte), Integer))
+        Me.btnLoadJSON.FlatAppearance.MouseOverBackColor = System.Drawing.Color.LightSalmon
         Me.btnLoadJSON.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.btnLoadJSON.Font = New System.Drawing.Font("Century Gothic", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.btnLoadJSON.ForeColor = System.Drawing.Color.FromArgb(CType(CType(136, Byte), Integer), CType(CType(169, Byte), Integer), CType(CType(195, Byte), Integer))
+        Me.btnLoadJSON.Font = New System.Drawing.Font("Century Gothic", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btnLoadJSON.ForeColor = System.Drawing.Color.FromArgb(CType(CType(54, Byte), Integer), CType(CType(28, Byte), Integer), CType(CType(4, Byte), Integer))
         Me.btnLoadJSON.Image = CType(resources.GetObject("btnLoadJSON.Image"), System.Drawing.Image)
         Me.btnLoadJSON.Location = New System.Drawing.Point(0, 150)
         Me.btnLoadJSON.Name = "btnLoadJSON"
-        Me.btnLoadJSON.Size = New System.Drawing.Size(208, 75)
+        Me.btnLoadJSON.Size = New System.Drawing.Size(221, 75)
         Me.btnLoadJSON.TabIndex = 0
         Me.btnLoadJSON.Text = "  &Load JSON file"
         Me.btnLoadJSON.TextAlign = System.Drawing.ContentAlignment.MiddleRight
@@ -407,15 +434,17 @@ Partial Class FormMain
         '
         'btnWriteJSON
         '
-        Me.btnWriteJSON.BackColor = System.Drawing.Color.FromArgb(CType(CType(9, Byte), Integer), CType(CType(18, Byte), Integer), CType(CType(53, Byte), Integer))
+        Me.btnWriteJSON.BackColor = System.Drawing.Color.FromArgb(CType(CType(185, Byte), Integer), CType(CType(92, Byte), Integer), CType(CType(80, Byte), Integer))
         Me.btnWriteJSON.FlatAppearance.BorderSize = 0
+        Me.btnWriteJSON.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(192, Byte), Integer), CType(CType(192, Byte), Integer))
+        Me.btnWriteJSON.FlatAppearance.MouseOverBackColor = System.Drawing.Color.LightSalmon
         Me.btnWriteJSON.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.btnWriteJSON.Font = New System.Drawing.Font("Century Gothic", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.btnWriteJSON.ForeColor = System.Drawing.Color.FromArgb(CType(CType(136, Byte), Integer), CType(CType(169, Byte), Integer), CType(CType(195, Byte), Integer))
+        Me.btnWriteJSON.Font = New System.Drawing.Font("Century Gothic", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btnWriteJSON.ForeColor = System.Drawing.Color.FromArgb(CType(CType(54, Byte), Integer), CType(CType(28, Byte), Integer), CType(CType(4, Byte), Integer))
         Me.btnWriteJSON.Image = CType(resources.GetObject("btnWriteJSON.Image"), System.Drawing.Image)
         Me.btnWriteJSON.Location = New System.Drawing.Point(0, 226)
         Me.btnWriteJSON.Name = "btnWriteJSON"
-        Me.btnWriteJSON.Size = New System.Drawing.Size(208, 75)
+        Me.btnWriteJSON.Size = New System.Drawing.Size(221, 75)
         Me.btnWriteJSON.TabIndex = 0
         Me.btnWriteJSON.Text = "  &Write to JSON"
         Me.btnWriteJSON.TextAlign = System.Drawing.ContentAlignment.MiddleRight
@@ -424,17 +453,19 @@ Partial Class FormMain
         '
         'btnCancel
         '
-        Me.btnCancel.BackColor = System.Drawing.Color.FromArgb(CType(CType(9, Byte), Integer), CType(CType(18, Byte), Integer), CType(CType(53, Byte), Integer))
+        Me.btnCancel.BackColor = System.Drawing.Color.FromArgb(CType(CType(185, Byte), Integer), CType(CType(92, Byte), Integer), CType(CType(80, Byte), Integer))
         Me.btnCancel.FlatAppearance.BorderSize = 0
+        Me.btnCancel.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(192, Byte), Integer), CType(CType(192, Byte), Integer))
+        Me.btnCancel.FlatAppearance.MouseOverBackColor = System.Drawing.Color.LightSalmon
         Me.btnCancel.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.btnCancel.Font = New System.Drawing.Font("Century Gothic", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.btnCancel.ForeColor = System.Drawing.Color.FromArgb(CType(CType(136, Byte), Integer), CType(CType(169, Byte), Integer), CType(CType(195, Byte), Integer))
+        Me.btnCancel.Font = New System.Drawing.Font("Century Gothic", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btnCancel.ForeColor = System.Drawing.Color.FromArgb(CType(CType(54, Byte), Integer), CType(CType(28, Byte), Integer), CType(CType(4, Byte), Integer))
         Me.btnCancel.Image = CType(resources.GetObject("btnCancel.Image"), System.Drawing.Image)
         Me.btnCancel.Location = New System.Drawing.Point(0, 489)
         Me.btnCancel.Name = "btnCancel"
-        Me.btnCancel.Size = New System.Drawing.Size(208, 75)
+        Me.btnCancel.Size = New System.Drawing.Size(221, 75)
         Me.btnCancel.TabIndex = 1
-        Me.btnCancel.Text = "&Cancel"
+        Me.btnCancel.Text = "   &Cancel"
         Me.btnCancel.TextAlign = System.Drawing.ContentAlignment.MiddleRight
         Me.btnCancel.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText
         Me.btnCancel.UseVisualStyleBackColor = False
@@ -442,15 +473,17 @@ Partial Class FormMain
         '
         'btnSaveToJSON
         '
-        Me.btnSaveToJSON.BackColor = System.Drawing.Color.FromArgb(CType(CType(9, Byte), Integer), CType(CType(18, Byte), Integer), CType(CType(53, Byte), Integer))
+        Me.btnSaveToJSON.BackColor = System.Drawing.Color.FromArgb(CType(CType(185, Byte), Integer), CType(CType(92, Byte), Integer), CType(CType(80, Byte), Integer))
         Me.btnSaveToJSON.FlatAppearance.BorderSize = 0
+        Me.btnSaveToJSON.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(192, Byte), Integer), CType(CType(192, Byte), Integer))
+        Me.btnSaveToJSON.FlatAppearance.MouseOverBackColor = System.Drawing.Color.LightSalmon
         Me.btnSaveToJSON.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.btnSaveToJSON.Font = New System.Drawing.Font("Century Gothic", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.btnSaveToJSON.ForeColor = System.Drawing.Color.FromArgb(CType(CType(136, Byte), Integer), CType(CType(169, Byte), Integer), CType(CType(195, Byte), Integer))
+        Me.btnSaveToJSON.Font = New System.Drawing.Font("Century Gothic", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btnSaveToJSON.ForeColor = System.Drawing.Color.FromArgb(CType(CType(54, Byte), Integer), CType(CType(28, Byte), Integer), CType(CType(4, Byte), Integer))
         Me.btnSaveToJSON.Image = CType(resources.GetObject("btnSaveToJSON.Image"), System.Drawing.Image)
         Me.btnSaveToJSON.Location = New System.Drawing.Point(0, 411)
         Me.btnSaveToJSON.Name = "btnSaveToJSON"
-        Me.btnSaveToJSON.Size = New System.Drawing.Size(208, 75)
+        Me.btnSaveToJSON.Size = New System.Drawing.Size(221, 75)
         Me.btnSaveToJSON.TabIndex = 1
         Me.btnSaveToJSON.Text = "  &Save to JSON"
         Me.btnSaveToJSON.TextAlign = System.Drawing.ContentAlignment.MiddleRight
@@ -460,15 +493,17 @@ Partial Class FormMain
         '
         'btnGeneratePDF
         '
-        Me.btnGeneratePDF.BackColor = System.Drawing.Color.FromArgb(CType(CType(9, Byte), Integer), CType(CType(18, Byte), Integer), CType(CType(53, Byte), Integer))
+        Me.btnGeneratePDF.BackColor = System.Drawing.Color.FromArgb(CType(CType(185, Byte), Integer), CType(CType(92, Byte), Integer), CType(CType(80, Byte), Integer))
         Me.btnGeneratePDF.FlatAppearance.BorderSize = 0
+        Me.btnGeneratePDF.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(192, Byte), Integer), CType(CType(192, Byte), Integer))
+        Me.btnGeneratePDF.FlatAppearance.MouseOverBackColor = System.Drawing.Color.LightSalmon
         Me.btnGeneratePDF.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.btnGeneratePDF.Font = New System.Drawing.Font("Century Gothic", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.btnGeneratePDF.ForeColor = System.Drawing.Color.FromArgb(CType(CType(136, Byte), Integer), CType(CType(169, Byte), Integer), CType(CType(195, Byte), Integer))
+        Me.btnGeneratePDF.Font = New System.Drawing.Font("Century Gothic", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btnGeneratePDF.ForeColor = System.Drawing.Color.FromArgb(CType(CType(54, Byte), Integer), CType(CType(28, Byte), Integer), CType(CType(4, Byte), Integer))
         Me.btnGeneratePDF.Image = CType(resources.GetObject("btnGeneratePDF.Image"), System.Drawing.Image)
         Me.btnGeneratePDF.Location = New System.Drawing.Point(0, 302)
         Me.btnGeneratePDF.Name = "btnGeneratePDF"
-        Me.btnGeneratePDF.Size = New System.Drawing.Size(208, 75)
+        Me.btnGeneratePDF.Size = New System.Drawing.Size(221, 75)
         Me.btnGeneratePDF.TabIndex = 1
         Me.btnGeneratePDF.Text = "  &Generate PDF"
         Me.btnGeneratePDF.TextAlign = System.Drawing.ContentAlignment.MiddleRight
@@ -477,7 +512,7 @@ Partial Class FormMain
         '
         'panel2
         '
-        Me.panel2.BackColor = System.Drawing.Color.FromArgb(CType(CType(20, Byte), Integer), CType(CType(32, Byte), Integer), CType(CType(46, Byte), Integer))
+        Me.panel2.BackColor = System.Drawing.Color.FromArgb(CType(CType(59, Byte), Integer), CType(CType(9, Byte), Integer), CType(CType(24, Byte), Integer))
         Me.panel2.Controls.Add(Me.label1)
         Me.panel2.Dock = System.Windows.Forms.DockStyle.Top
         Me.panel2.Location = New System.Drawing.Point(0, 0)
@@ -488,9 +523,9 @@ Partial Class FormMain
         'label1
         '
         Me.label1.AutoSize = True
-        Me.label1.BackColor = System.Drawing.Color.FromArgb(CType(CType(20, Byte), Integer), CType(CType(32, Byte), Integer), CType(CType(46, Byte), Integer))
+        Me.label1.BackColor = System.Drawing.Color.FromArgb(CType(CType(59, Byte), Integer), CType(CType(9, Byte), Integer), CType(CType(24, Byte), Integer))
         Me.label1.Font = New System.Drawing.Font("Century Gothic", 20.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.label1.ForeColor = System.Drawing.Color.FromArgb(CType(CType(136, Byte), Integer), CType(CType(169, Byte), Integer), CType(CType(195, Byte), Integer))
+        Me.label1.ForeColor = System.Drawing.Color.FromArgb(CType(CType(228, Byte), Integer), CType(CType(212, Byte), Integer), CType(CType(200, Byte), Integer))
         Me.label1.Location = New System.Drawing.Point(258, 21)
         Me.label1.Name = "label1"
         Me.label1.Size = New System.Drawing.Size(468, 32)
@@ -501,13 +536,14 @@ Partial Class FormMain
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.BackColor = System.Drawing.Color.FromArgb(CType(CType(43, Byte), Integer), CType(CType(66, Byte), Integer), CType(CType(87, Byte), Integer))
+        Me.BackColor = System.Drawing.Color.FromArgb(CType(CType(205, Byte), Integer), CType(CType(126, Byte), Integer), CType(CType(127, Byte), Integer))
         Me.ClientSize = New System.Drawing.Size(965, 719)
         Me.Controls.Add(Me.panelPlaceholder)
         Me.Controls.Add(Me.panelFields)
         Me.Controls.Add(Me.panel1)
         Me.Controls.Add(Me.panel2)
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle
+        Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
         Me.MaximizeBox = False
         Me.Name = "FormMain"
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
