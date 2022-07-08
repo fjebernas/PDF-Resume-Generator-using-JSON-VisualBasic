@@ -14,7 +14,7 @@
     Public Skill2 As String
     Public Skill3 As String
 
-    Public notes As String
+    Public Notes As String
 
     Public Sub New()
 
@@ -32,7 +32,7 @@
         Skill1 = txtBxSkillOne
         Skill2 = txtBxSkillTwo
         Skill3 = txtBxSkillThree
-        notes = txtBxNotes
+        Notes = txtBxNotes
     End Sub
 
 End Class

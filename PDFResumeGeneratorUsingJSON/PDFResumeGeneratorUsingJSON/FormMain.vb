@@ -45,7 +45,7 @@ Public Class FormMain
                     Dim person As Person = JsonConvert.DeserializeObject(Of Person)(jsonFromFile)
 
                     Dim nameParts() As String = SplitName(person.FullName)
-                    nameParts(0) = nameParts(0).Replace(" ", "-")
+                    nameParts(0) = nameParts(0).Replace(" ", "-").ToUpper()
                     nameParts(1) = nameParts(1).ToUpper()
                     namePDF_JSON = nameParts(1) + "_" + nameParts(0)
 
@@ -65,7 +65,7 @@ Public Class FormMain
                     txtBxSkillTwo.Text = "• " + person.Skill2
                     txtBxSkillThree.Text = "• " + person.Skill3
 
-                    txtBxNotes.Text = person.notes
+                    txtBxNotes.Text = person.Notes
 
                     fullName = person.FullName
                     contactNo = person.ContactNo
@@ -82,7 +82,7 @@ Public Class FormMain
                     skill2 = person.Skill2
                     skill3 = person.Skill3
 
-                    notes = person.notes
+                    notes = person.Notes
 
                     panelPlaceholder.Visible = False
                     panelFields.Visible = True
